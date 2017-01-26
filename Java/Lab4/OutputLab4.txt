@@ -4,11 +4,11 @@ V of 2nd car : 4 S of 2nd car : 20
 --------------------Lab4.2-----------------
 compile error
 --------------------Lab4.3-----------------
-V of 1st car : 3 S of 1st car : 10
-V of 2nd car : 4 S of 2nd car : 20
+ตอบ 2 แบบ	V of 1st car : 3 S of 1st car : 10
+		V of 2nd car : 4 S of 2nd car : 20
 --------------------Lab4.4-----------------
-V of 1st car : 3 S of 1st car : 10
-V of 2nd car : 4 S of 2nd car : 20
+ตอบ 3 แบบ	V of 1st car : 3 S of 1st car : 10
+	V of 2nd car : 4 S of 2nd car : 20
 --------------------Lab4.5-----------------
 
 

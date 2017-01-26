@@ -1,0 +1,88 @@
+--------------------Lab5.1-----------------
+1 2 3 4 5 6 7 8 9 10
+--------------------Lab5.2-----------------
+1 2 3 4 5
+--------------------Lab5.3-----------------
+Enter the number : 4
+Enter the number : 5
+Enter the number : 2
+Enter the number : 7
+Enter the number : 5
+max = 7
+min = 2
+--------------------Lab5.4-----------------
+conpile error
+--------------------Lab5.5-----------------
+0 : 0
+1 : 1
+2 : 2
+3 : 3
+4 : 4
+--------------------Lab5.6-----------------
+เนื่อจาก lab 5.4 ยังไม่ได้สร้าง object ขึ้นมา แต่มีการใส่ค่าเข้าไปเข้าในทำให้ complie error
+--------------------Lab5.7-----------------
+Enter number of Knights : 2
+Set HP of Knight #0 : 500
+Set Atk of Knight #0 : 30
+Set name of Knight #0 : num1
+Set HP of Knight #1 : 400
+Set Atk of Knight #1 : 50
+Set name of Knight #1 : num2
+Knight #0 HP = 500
+Knight #0 Atk = 30
+Knight #0 name = num1
+Knight #1 HP = 400
+Knight #1 Atk = 50
+Knight #1 name = num2
+--------------------Lab5.8-----------------
+Enter number of Knights : 3
+Set HP of Knight #0 : 500
+Set Atk of Knight #0 : 40
+Set name of Knight #0 : num1
+Set HP of Knight #1 : 400
+Set Atk of Knight #1 : 50
+Set name of Knight #1 : num2
+Set HP of Knight #2 : 600
+Set Atk of Knight #2 : 30
+Set name of Knight #2 : num3
+Knight #0 HP = 500
+Knight #0 Atk = 40
+Knight #0 name = num1
+Knight #1 HP = 400
+Knight #1 Atk = 50
+Knight #1 name = num2
+Knight #2 HP = 600
+Knight #2 Atk = 30
+Knight #2 name = num3
+num1 attacks num2num2 HP : 360
+num2 attacks num3num3 HP : 550
+num3 attacks num1num1 HP : 470
+--------------------Lab5.9-----------------
+lab 5.8 เป็นการใส่ค่าเข้าไปแล้วแสดงผลธรราดา แต่ lab 5.9 มีการเพิ่ม method acctack เข้าไป และมีคำสั่งเรียกใช้งาน method 
+--------------------Lab5.10----------------
+Enter number of Knights : 3
+Set HP of Knight #0 : 500
+Set Atk of Knight #0 : 40
+Set name of Knight #0 : num1
+Set HP of Knight #1 : 400
+Set Atk of Knight #1 : 50
+Set name of Knight #1 : num2
+Set HP of Knight #2 : 600
+Set Atk of Knight #2 : 30
+Set name of Knight #2 : num3
+Knight #0 HP = 500
+Knight #0 Atk = 40
+Knight #0 name = num1
+Knight #1 HP = 400
+Knight #1 Atk = 50
+Knight #1 name = num2
+Knight #2 HP = 600
+Knight #2 Atk = 30
+Knight #2 name = num3
+num1 attacks num2num2 HP : 360
+num2 attacks num3num3 HP : 550
+num3 attacks num1num1 HP : 470
+num3 attacks num1num1 HP : 440
+num3 attacks num2num2 HP : 330
+num2 attacks num1num1 HP : 390
+num1 attacks num3num3 HP : 510

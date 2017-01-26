@@ -1,0 +1,118 @@
+--------------------Lab4.1-----------------
+V of 1st car : 3 S of 1st car : 10
+V of 2nd car : 4 S of 2nd car : 20
+--------------------Lab4.2-----------------
+compile error
+--------------------Lab4.3-----------------
+V of 1st car : 3 S of 1st car : 10
+V of 2nd car : 4 S of 2nd car : 20
+--------------------Lab4.4-----------------
+V of 1st car : 3 S of 1st car : 10
+V of 2nd car : 4 S of 2nd car : 20
+--------------------Lab4.5-----------------
+
+
+--------------------Lab4.6-----------------
+Brand : Toyota v : 0
+Brand : Honda v : 10
+--------------------Lab4.7-----------------
+Brand : Toyota v : 0
+Brand : Honda v : 10
+Brand : BMW v : 60
+--------------------Lab4.8-----------------
+Rav attack Jak
+Jak HP : 1800
+Jak attack Rav
+Rav HP : 1
+Jak attack Rav
+Rav knockout
+--------------------Lab4.9-----------------
+compile error
+--------------------Lab4.10----------------
+Ravkung attack Jakkung
+Jakkung HP : 199900
+Ravkung Bash Jakkung
+Jakkung HP : 198900
+Ravkung Bash Jakkung
+Jakkung HP : 197900
+Ravkung Bash Jakkung
+Jakkung HP : 196900
+Ravkung Bash Jakkung
+Jakkung HP : 195900
+Ravkung Bash Jakkung
+Jakkung HP : 194900
+Ravkung Bash Jakkung
+Jakkung HP : 193900
+Ravkung Bash Jakkung
+Jakkung HP : 192900
+Ravkung Bash Jakkung
+Jakkung HP : 191900
+Ravkung Bash Jakkung
+Jakkung HP : 190900
+Ravkung Bash Jakkung
+Jakkung HP : 189900
+Ravkung Bash Jakkung
+Jakkung HP : 188900
+Ravkung Bash Jakkung
+Jakkung HP : 187900
+Ravkung Bash Jakkung
+Jakkung HP : 186900
+Jakkung Bash Ravkung
+Ravkung knockout
+--------------------Lab4.11----------------
+Ravkung attack Jakkung
+Jakkung HP : 199900
+Ravkung Bash Jakkung
+Jakkung HP : 198900
+Ravkung Bash Jakkung
+Jakkung HP : 197900
+Ravkung Bash Jakkung
+Jakkung HP : 196900
+Ravkung Bash Jakkung
+Jakkung HP : 195900
+Ravkung Bash Jakkung
+Jakkung HP : 194900
+Ravkung Bash Jakkung
+Jakkung HP : 193900
+Ravkung Bash Jakkung
+Jakkung HP : 192900
+Ravkung Bash Jakkung
+Jakkung HP : 191900
+Ravkung Bash Jakkung
+Jakkung HP : 190900
+Ravkung Bash Jakkung
+Jakkung HP : 189900
+Jakkung attack Ravkung
+Ravkung HP : 1
+Ravkung HP : 101
+Ravkung HP : 201
+Ravkung HP : 301
+Ravkung HP : 401
+Ravkung HP : 501
+Ravkung HP : 601
+Ravkung HP : 701
+Ravkung HP : 801
+Ravkung HP : 901
+Ravkung HP : 1001
+Ravkung Bash Jakkung
+Jakkung HP : 188900
+Ravkung Bash Jakkung
+Jakkung HP : 187900
+Ravkung Bash Jakkung
+Jakkung HP : 186900
+Ravkung Bash Jakkung
+Jakkung HP : 185900
+Ravkung Bash Jakkung
+Jakkung HP : 184900
+Ravkung Bash Jakkung
+Jakkung HP : 183900
+Ravkung Bash Jakkung
+Jakkung HP : 182900
+Ravkung Bash Jakkung
+Jakkung HP : 181900
+Ravkung Bash Jakkung
+Jakkung HP : 180900
+Ravkung Bash Jakkung
+Jakkung HP : 179900
+Jakkung Bash Ravkung
+Ravkung knockout

@@ -20,7 +20,14 @@ public class Lab2As1 {
             case "+" :  System.out.println("Results : "+(a+b)); break;
             case "-" :  System.out.println("Results : "+(a-b)); break;
             case "*" :  System.out.println("Results : "+(a*b)); break;
-            case "/" :  System.out.println("Results : "+(a/b)); break;
+            case "/" :  {
+                        if(b==0){
+                            System.out.println("Try again");
+                        }
+                        else{
+                            System.out.println("Results : "+(a/b)); break;
+                        }
+                        }
             default : System.out.println("Try again");
         }
     }

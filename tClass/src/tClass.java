@@ -7,24 +7,39 @@ import java.util.Scanner;
  */
 public class tClass {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Num = ");
-        int num = sc.nextInt();
-        if (num%2==0 || num%3==0|| num%5==0 || num%7==0 || num%11==0) {
-            System.out.println("Number not Prime");
+          int  n,a=0 ;
+       Scanner S = new Scanner(System.in);
+       System.out.println("input");
+       n=S.nextInt();
+        
+       if(n==2){
+             System.out.println("2");
+         }
+         if(n==3){
+             System.out.println("2,3");
+         }
+         if(n==5){
+                 System.out.println("2,3,5");
         }
-        else{
-            System.out.println("Number "+num+" is Prime");
-            for (int i = 2; i <= num; i++) {
-                for (int j=2; j <=i; j++) {
-                    if(j==i){
-                        System.out.print(i+" ");
-                    }
-                    if(i%j==0){
-                       break;
-                    }
-                }
-            }
+        if(n==7){
+                 System.out.println("2,3,5,7");
         }
+         if(n==11){
+                  System.out.println("2,3,5,7,11");
+        }
+         else{
+             if(n>=2);
+                for ( int i = 2; i<=n; i++){                       
+                 if ( i%2==0|| i%3==0 || i%5==0 || i%7==0 || i%11==0 ){
+                       //System.out.println("sum "+i);
+                         
+                     }
+                 else 
+                      {
+                       System.out.print(" "+i);             
+                     }      
+                 }
+                     
+         }
     }
 }

@@ -116,6 +116,5 @@ public class Lab4As1 {
         a.unti(b);
         b.unti(a);
         a.unti(b);
-        
     }
 }

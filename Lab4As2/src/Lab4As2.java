@@ -70,7 +70,6 @@ public class Lab4As2 {
         System.out.println("Name : "+b.getBrand()+" Speed : "+b.getV());
         System.out.println("Name : "+c.getBrand()+" Speed : "+c.getV());
         System.out.println("--------------");
-        //a.setS(30);
         a.speed();
         a.speed();
         a.Break();

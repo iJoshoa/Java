@@ -82,11 +82,13 @@ class knight{
         if(this.Hp <=0 || target.Hp<=0) {
             checkhp(target);
         }
-        else if((this.Atk+this.Mp)-target.Def<=0){
-            
+        else if((this.Atk+500)-target.Def<=0||this.Mp-150<=0){
+            System.out.println("Not atk");
+            System.out.println(target.Name+" HP "+target.Hp);
         }
         else {        
-            target.Hp= target.Hp-((this.Atk+this.Mp)-target.Def);
+            this.Mp=this.Mp-150;
+            target.Hp= target.Hp-((this.Atk+200)-target.Def);
             checkhp(target);
         }
     }
@@ -98,7 +100,8 @@ class knight{
             System.out.println(target.Name+" knockout");
         }
         else
-            System.out.println(target.Name+" Hp="+target.Hp);
+            System.out.print(target.Name+" Hp="+target.Hp);
+            System.out.println(" Mp = "+this.Mp);
             System.out.println("----------------------");
     }
 }

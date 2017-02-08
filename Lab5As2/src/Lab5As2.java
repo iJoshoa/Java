@@ -16,7 +16,6 @@
 จากนั้นสร้าง Object Car ขึ้นมาโดยใช้ Array ขนาด 5 และมีการเร่งความเร็ว หรือเบรก อย่างน้อย 10 ครั้ง ในการสั่ง
 คำสั่งแต่ละครั้ง ให้มีการแสดงยี่ห้อรถ ความเร็ว และตำแหน่ง ด้วย
 */
-import java.util.Scanner;
 
 class car{
     private int v;
@@ -47,7 +46,7 @@ class car{
     public int getS(){
         return s;
     }
-    public void speed(){
+    public void Speed(){
         //System.out.println("Speed");
         this.v+=1;
         this.s+=1;
@@ -60,31 +59,35 @@ class car{
         checkCar();
     }
     public void checkCar(){
-        System.out.print("Name = "+this.Brand+" Speed = "+this.v);
+        System.out.print(this.Brand+" Speed = "+this.v);
         System.out.println(" S = "+this.getS());
         //System.out.println("--------------");
     }
 }
 public class Lab5As2 {
     public static void main(String[] args) {
-        //Scanner sc = new Scanner(System.in);
-        //System.out.print("Enter Num : ");
-        //int num = sc.nextInt();
         int num = 5;
         car[] a= new car[num];
-        for (int i = 0; i < num; i++) {
+        for (int i = 0; i < a.length; i++) {
             a[i]=new car("Car"+(i+1));
             System.out.println("Name : "+a[i].getBrand()+" Speed : "+a[i].getV());
         }
         System.out.println("------------------");
-        for (int i = 0; i < 3; i++) {
-            a[1].speed();
-            a[3].speed();
-            a[3].speed();
-            
+        a[1].Speed();
+        a[0].Speed();
+        a[1].Speed();
+        a[0].Speed();
+        a[2].Speed();
+        a[2].Speed();
+        a[1].Break();
+        a[2].Speed();
+        a[0].Speed();
+        a[3].Speed();
+        a[4].Speed();
+        System.out.println("--------------------");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i].getBrand()+" Speed: "+a[i].getV()+"S : "+a[i].getS());
         }
-        a[3].Break();
-        a[3].Break();
-        a[3].Break();
+        
     }
 }

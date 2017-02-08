@@ -17,7 +17,6 @@ Method ดังต่อไปนี้
 จากนั้นให้สร้าง Object knight ขึ้นมาโดยใช้ Array ขนาด 5 และมีการใช้ฟังก์ชันโจมตี หรือท่าพิเศษ อย่างน้อย 10
 ครั้ง
 */
-import java.util.Scanner;
 class Knight{
     private int Hp;
     private int Mp;
@@ -33,7 +32,7 @@ class Knight{
     }
     Knight(){
         this.Hp=1000;
-        this.Mp=200;
+        this.Mp=1000;
         this.Atk=100;
         this.Def=50;
     }
@@ -82,18 +81,19 @@ class Knight{
     }
     public void Unti(Knight target){
         System.out.println(this.Name+" Unti "+target.Name);
+        
         if(this.Hp <=0 || target.Hp<=0){
             checkHp(target);
         }
-        else if((this.Atk+this.Mp)-target.Def<=0){
-            
+        else if(this.Mp <=0 || this.Mp-200<=0){
+            System.out.println(this.Name+" No MP");
+            System.out.println("-----------------------");
         }
         else{
-            
-            target.Hp=target.Hp-((this.Atk+this.Mp)-target.Def);
+            this.Mp-=200;
+            target.Hp=target.Hp-((this.Atk+200)-target.Def);
             checkHp(target);
-        }
-        
+        }       
     }
     public void checkHp(Knight target){
         if (target.Hp<=0 || this.Hp<=0) {
@@ -111,23 +111,30 @@ class Knight{
 }
 public class Lab5As1 {
     public static void main(String[] args) {
-        //Scanner sc = new Scanner(System.in);
-        //System.out.print("Enter Num : ");
-        //int num = sc.nextInt();
         int num =5;
         Knight[] a=new Knight[num];
-        for (int i = 0; i < num; i++) {
-            a[i]=new Knight();
+        for (int i = 0; i < a.length; i++) {
+            a[i]= new Knight();
             a[i].setName("Knight"+(i+1));
             System.out.println(a[i].getName()+". Hp = "+a[i].getHp()+" Mp = "+a[i].getMp()+" Stk = "+a[i].getAtk()+" Def = "+a[i].getDef());
         }
         System.out.println("-----------------------");
-
-        for (int i = 0; i < 5; i++) {
+     
             a[1].Atk(a[0]);
             a[0].Unti(a[1]);
+            a[1].Atk(a[0]);
+            a[0].Unti(a[1]);
+            a[1].Atk(a[3]);
+            a[0].Unti(a[1]);
+            a[3].Atk(a[4]);
+            a[3].Unti(a[2]);
+            a[1].Atk(a[2]);
+            a[3].Unti(a[4]);
+            a[0].Unti(a[1]);
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i].getName()+". Hp = "+a[i].getHp()+" Mp = "+a[i].getMp()+" Stk = "+a[i].getAtk()+" Def = "+a[i].getDef());
         }
-        
         
     }
 }

@@ -86,7 +86,7 @@ public class Lab5As2 {
         a[4].Speed();
         System.out.println("--------------------");
         for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i].getBrand()+" Speed: "+a[i].getV()+"S : "+a[i].getS());
+            System.out.println(a[i].getBrand()+" Speed: "+a[i].getV()+" S: "+a[i].getS());
         }
         
     }

@@ -1,0 +1,133 @@
+4.
+class Human{
+    private int Hp;
+    Human(int Hp){
+        this.Hp=Hp;
+    }
+    public int getHp(){
+        return Hp;
+    }
+    public void setHp(int Hp){
+        this.Hp=Hp;
+    }
+}
+class mate extends Human{
+    private int mana;
+    mate(int Hp,int mana){
+       super(Hp);
+       this.mana=mana;
+   }
+    public void setmana(int mana){
+        this.mana=mana;
+    }
+    public int getmana(){
+        return mana;
+    }
+}
+class str extends Human{
+    private int Def;
+    str(int Hp,int Def){
+       super(Hp);
+       this.Def=Def;
+   }
+    public void setDef(int Def){
+        this.Def=Def;
+    }
+    public int getDef(){
+        return Def;
+    }
+}
+class sup extends Human{
+    private int a;
+    sup(int Hp,int a){
+       super(Hp);
+       this.a=a;
+   }
+    public void seta(int a){
+        this.a=a;
+    }
+    public int geta(){
+        return a;
+    }
+}
+public class finals {
+    public static void main(String[] args) {
+        Human a = new mate(20,2);
+        Human b = new str(20,5);
+        Human c = new sup(10,10);
+    }
+}
+--------------------------------------------------------------------------------------------------------
+5.
+public class fors {
+public static void num(int i){
+    if(i>=0){
+        num(i-1);
+        if(i%2==0)
+            System.out.println("เลขคู่ = "+i);
+    }
+}
+    public static void main(String[] args) {
+        num(10000);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+
+6.
+public class fors {
+public static void num(int i){
+    if(i>=0){
+        num(i-1);
+        if(i%2!=0)
+            System.out.println("เลขคี่ = "+i);
+    }
+}
+    public static void main(String[] args) {
+        num(10000);
+    }
+}
+------------------------------------------------------------------------------------------------------------
+รวมเรื่อยๆ 
+
+public class fors {
+public static int num(int i){
+    if(i>=0)return i+num(i-1);
+    else return 0;
+}
+    public static void main(String[] args) {
+        System.out.println(num(20));
+    }
+}
+---------------------------------------------------------------------------------------------------------------
+n!
+
+public class fors {
+public static int num(int i){
+    if(i>0){
+        return i*num(i-1);
+    }
+    else{
+        return 1;
+    }
+}
+    public static void main(String[] args) {
+        System.out.println(num(3));
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+pow i^2
+
+public class fors {
+    public static void loop(int loop){
+        for (int i = loop; i>0; i--) {
+            for (int j = 0; j< Math.pow(2,loop-i); j++) {
+                System.out.print(i);
+            }
+            System.out.println("");
+        }
+    }
+    public static void main(String[] args) {
+       loop(4);
+    }
+}

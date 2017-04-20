@@ -1,0 +1,75 @@
+/**
+ *
+ * @author $_F
+ */
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+class panelAn extends JPanel implements ActionListener{
+    int x;
+    int y;
+    int k;
+    boolean b1,b2;
+    public void paint(Graphics g){
+        super.paint(g);
+        g.setColor(Color.red);
+        g.fillRect(x, y, 50, 50);
+        g.setColor(Color.green);
+        g.fillRect(x+50, y, 50, 50);
+        g.setColor(Color.blue);
+        g.fillRect(x+100, y, 50, 50);
+        g.setColor(Color.pink); 
+        g.fillRect(x+150, y, 50, 50);
+        g.setColor(Color.red);
+        g.fillRect(x+200, y, 50, 50);
+        g.setColor(Color.green);
+        g.fillRect(x+250, y, 50, 50);
+        g.setColor(Color.blue);
+        g.fillRect(x+300, y, 50, 50);
+        g.setColor(Color.pink); 
+        g.fillRect(x+350, y, 50, 50); 
+        
+        g.setColor(Color.black);
+        g.fillOval(x+350, k, 25, 25);
+    }
+    panelAn(){
+        x=0;
+        y=100;
+        k=75;
+        b1=true;
+        b2=true;
+        new Timer(10,this).start();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(b1==true){
+            if(x==800){
+                x=-80;
+            }
+            x+=5;
+        }
+        if(b2==true){
+            if(k==0){
+                k=75;
+            }
+            k-=5;
+        }
+        repaint();
+    }
+}
+class Frame extends JFrame{
+    Frame(){
+        this.add(new panelAn());
+        this.setTitle("inw");
+    }
+}
+public class FinalLab {
+    public static void main(String[] args) {
+        Frame f = new Frame();
+        f.setSize(800, 600);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setVisible(true);
+        
+    }
+}

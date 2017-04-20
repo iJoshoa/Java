@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class fors {
+    public static void loop(int loop){
+        int a=0;
+        for (int i = loop; i>0; i--) {
+            a++;
+            for (int j = 0; j< Math.pow(2,loop-i); j++) {
+                System.out.print(a);
+            }
+            System.out.println("");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter : ");
+        int a = sc.nextInt();
+        loop(a);
+    }
+}
